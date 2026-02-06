@@ -2,3 +2,4 @@ theme = "seoul256-dark-hard"
 
 [editor]
 bufferline='multiple'
+rulers = [80, 120]
