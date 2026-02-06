@@ -1,4 +1,4 @@
-theme = "autumn_night"
+theme = "seoul256-dark-hard"
 
 [editor]
 bufferline='multiple'
