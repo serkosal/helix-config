@@ -1,5 +1,25 @@
 theme = "seoul256-dark-hard"
 
 [editor]
-bufferline='multiple'
-rulers = [80, 120]
+auto-format = false                    # Enable automatic formatting on save
+bufferline  = 'multiple'               # Renders a line displaying open buffers 
+cursorline  = true                     # Highlight all lines with a cursor
+rulers      = [80, 120]                # Draws vertical bars at specified cols
+
+# Gutters to display, like git-diff, line-numbers, etc
+gutters     = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+
+[editor.auto-save]                     # conditions on auto save
+focus-lost          = false            # saves when terminal not in focus
+after-delay.enable  = true             # saves after last edit timeout
+
+
+[editor.cursor-shape]                  # cursor shape in different modes
+insert = "bar"
+
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 0
